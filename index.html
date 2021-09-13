@@ -8,6 +8,7 @@
   
   <title>Frontend Mentor | Order summary card</title>
 
+  <link rel="stylesheet" href="styles.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -15,23 +16,30 @@
   </style>
 </head>
 <body>
-
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
+  <main>
+    <header></header>
+    <section class="about">
+      <h1>Order Summary</h1>
+      <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!</p>
+      <div class="plan">
+        <div class="plan-icon">
+          <img src="./images/icon-music.svg" alt="Music Icon">
+        </div>
+        <div class="plan-type">
+          <div class="plan-name">Annual Plan</div>
+          <div class="plan-rate"> $59.99/year</div>
+        </div>
+        <div class="change-plan"> Change</div>
+      </div>
+      <a href="#" class="payment">Proceed to Payment</a>
+      <a href="#" class="cancel">Cancel Order</a>
+    </section>
+  </main>
   
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://github.com/chetanhaobijam">Haobijam Chetan Singh</a>.
+  </footer>
 </body>
 </html>
