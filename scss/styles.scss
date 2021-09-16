@@ -13,6 +13,7 @@ body {
 
 .background-pattern {
   position: absolute;
+  width: 100%;
   inset: 0 auto auto 0;
   z-index: -1;
   img {
@@ -116,7 +117,10 @@ main {
 }
 
 .attribution {
-  font-size: 11px;
+  position: relative;
+  inset: auto auto 2px auto;
+  width: 100%;
+  font-size: 0.9rem;
   text-align: center;
 
   a {
@@ -124,4 +128,18 @@ main {
   }
 }
 
+@media (min-width: 425px) {
+  main {
+    max-width: 35ch;
+    margin: 5rem auto;
+  }
+}
 
+@media (min-height: 768px) {
+  body {
+    overflow-y: hidden;
+  }
+  .attribution {
+    position: fixed;
+  }
+}
