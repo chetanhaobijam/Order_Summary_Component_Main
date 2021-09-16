@@ -8,8 +8,120 @@
 
 body {
   font: $font-stack;
+  background-color: $primary-color;
 }
 
-h1 {
-  color: $bright-blue;
+.background-pattern {
+  position: absolute;
+  inset: 0 auto auto 0;
+  z-index: -1;
+  img {
+    width: 100%;
+    max-height: 50vh;  
+  }
 }
+
+main {
+  margin: 5rem 1rem;
+  background-color: #fff;
+  border-radius: 20px;
+
+  header {
+    img{
+      width: 100%;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+  }
+
+  .about {
+    padding: 0.5rem 1rem;
+    text-align: center;
+
+    h1 {
+      font-size: 1.3rem;
+      margin: 1rem;
+      font-weight: 900;
+      color: $dark-blue;
+    }
+
+    p {
+      width: 25ch;
+      margin: 0 auto;
+      color: $desaturated-blue;
+    }
+
+    .plan {
+      background-color: $very-pale-blue;
+      display: flex;
+      padding: 1rem;
+      justify-content: space-between;
+      align-items: center;
+      margin: 2rem 0;
+      border-radius: 10px;
+
+      .plan-type {
+        margin-left: -3rem;
+        .plan-name {
+          font-weight: 900;
+          margin-bottom: 0.3rem;
+          color: $dark-blue;
+        }
+
+        .plan-rate {
+          color: $desaturated-blue;
+        }
+      }
+
+      .change-plan {
+        a {
+          color: $bright-blue;
+          font-weight: 700;
+          font-size: 0.9rem;
+
+          &:hover {
+            text-decoration: none;
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+
+    .payment {
+      display: block;
+      padding: 1rem;
+      background-color: $bright-blue;
+      color: #fff;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    .cancel {
+      display: block;
+      color: $desaturated-blue;
+      font-weight: 700;
+      text-decoration: none;
+      margin: 2rem;
+
+      &:hover {
+        color: $dark-blue;
+      }
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+
